@@ -18,4 +18,8 @@ private final CityRepository cityRepository;
         return cityRepository.findByName(cityName);
     }
 
+    public City add(City city){
+     return  this.cityRepository.save(city);
+    }
+
 }
