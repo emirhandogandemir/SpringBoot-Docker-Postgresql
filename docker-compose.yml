@@ -2,9 +2,11 @@ version: '2'
 
 services:
   app:
-    container_name: bestcloudformecase
+    container_name: case
     image: bestcloudformecase
     build: ./
+    ports:
+      - "8080:8080"
     depends_on:
       - postgresqldb
     environment:
@@ -15,8 +17,6 @@ services:
   postgresqldb:
     image: postgres
     container_name: postgresqldb
-    ports:
-      - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=12345
       - POSTGRES_USER=postgres
