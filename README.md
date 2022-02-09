@@ -21,13 +21,22 @@ nasıl çalıştırılacağı belirtilmelidir.
 `docker-compose up`  dediğimizde ilk başta postgresqldb containerini yaratıp bestcloudforme databasei olmadığı için case containerini yaratamaz
 ## Bunun için 
 `docker exec -it postgresqldb bash`
+
 `psql -U postgres`
+
 `CREATE database bestcloudforme;`
+
 `\l ile olan databaseleri listeleyebiliriz`
+
 sonrasında çalışmamış container olan case ı ayağa kaldırabiliriz.
 `\c bestcloudforme`
+
 `\dt;`
+
 `insert into cities(id,name,temperature) values(1,'istanbul',37.9);`
+
 `select * from cities;`
+
 **http://localhost:8080** 
+
 **http://localhost:8080/temperature?city=istanbul**
