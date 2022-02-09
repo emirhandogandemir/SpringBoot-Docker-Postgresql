@@ -1,19 +1,27 @@
 # SpringBoot-Docker-Postgresql
 ##CASE
-Görev 1 (Zorunludur) Aşağıda belirtilen akışı yerine getirecek API’yi herhangi bir yazılım dili 
-ile kodlayınız.
+Görev 1 (Zorunludur) Aşağıda belirtilen akışı yerine getirecek API’yi herhangi bir yazılım dili ile kodlayınız.
+
 ● API’nin giriş ekranında adınız ve soyadınız yazmalı.
+
 ● Geliştirdiğiniz API “/temperature” olarak bir endpoint’e sahip olmalı.
+
 ● İlgili endpoint’e; GET metodu ile ilgili şehrin ismini city parametresi ile gönderdiğinizde 
 JSON formatında ilgili şehrin hava sıcaklığı ekrana yazdırılmalıdır. (POST isteği kabul 
 etmemeli)
+
 Aşağıdaki adreslerde ilgili örneği görebilirsiniz. Siz de kendi uygulamanızı aynı şekilde bizimle 
 paylaşınız.
+
 https://caseapi.bestcloudfor.me
+
 https://caseapi.bestcloudfor.me/temperature?city=istanbul
+
 Görev 2 (Zorunludur) Geliştirmiş olduğunuz uygulamanın bir container içinde 
 çalışabilmesini sağlayınız. Sektörde biz bu işleme containerize etmek diyoruz.
+
 • Dockerfile ile yapılması + puandır.
+
 • README.md dosyasında containerize edilmiş uygulamanın nasıl build alınacağı ve 
 nasıl çalıştırılacağı belirtilmelidir.
 
