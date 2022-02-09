@@ -1,18 +1,32 @@
 version: '2'
+
 services:
   app:
-    container_name: case
-    image: case
+    container_name: bestcloudformecase
+    image: bestcloudformecase
     build: ./
-    ports:
-      - "8080:8080"
     depends_on:
       - postgresqldb
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresqldb:5432/bestcloudforme
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=12345
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
   postgresqldb:
     image: postgres
+    container_name: postgresqldb
     ports:
       - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=12345
       - POSTGRES_USER=postgres
-      - POSTGRES_DB=bestcloudforme
+
+
+
+
+
+
+
+
+
+
